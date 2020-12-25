@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" onload="setTime()" onclick="jump()">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Game</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>StarWars Jump Game</h1>
+        <div id="game">
+        <div class="timer_div" id="timer">
+            <label id="minutes timer">00</label>:<label id="seconds">00</label>
+        </div>
+        <div style="width: 100px; height: 100px;" id="baby_yoda" onkeydown="jump()">
+            <div id="hitbox_character"></div>
+        </div>
+        <div style="width: 100px; height: 160px" id="storm_trooper">
+        </div>
+        <div id="tie"></div>
+        <div id="X-Wing"></div>
+    </body>
+    <script src="script.js"></script>
+</html>

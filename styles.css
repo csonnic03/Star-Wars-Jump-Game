@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+/*html background code*/
+html{
+    background: url(images/StarWars_Space.png);
+}
+h1{
+    color: orange;
+    position: absolute;
+    top: 20px;
+    left: 38%;
+    font-family: StarJedi;
+}
+@font-face {
+    font-family: StarJedi;
+    src: url(fonts/Starjedi.ttf);
+    src: url(fonts/Starjhol.ttf);
+    src: url(fonts/Starjout.ttf);
+    src: url(fonts/STJEDISE.TTF);
+  }
+  
+/*Div for the background */
+div{
+    background-image: url(images/background3.gif);
+}
+
+/*Ids's*/
+/*Button ID*/
+#button {     
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;   
+    font-size: 80px;
+    color: white;
+    position: relative;
+    height: 600px;
+    width: 800px;
+}
+/*Game ID*/
+#game{
+    width: 800px;
+    height: 600px;
+    border: 1px solid black;
+    position: relative;
+    top: 100px;
+    left: 25%;
+}
+/*Character ID*/
+#baby_yoda{
+    width: 100px;
+    height: 100px;
+    background-image: url(images/yoda.png);
+    position: relative;
+    top: 480px;
+    left: 50px;
+    background-size: cover;
+}
+/*Character Hitbox ID*/
+#hitbox_character{
+    width: 40px;
+    height: 70px;
+    background: transparent;
+    position: relative;
+    left: 30px;
+}
+/*Storm Trooper ID*/
+#storm_trooper{
+    width: 100px;
+    height: 200px;
+    background-image: url(images/storm_trooper.png);
+    position: relative;
+    top: 300px;
+    left: 900px;
+    animation: storm_trooper 1s infinite;
+}
+/*Tie Fighter ID*/
+#tie{
+    width: 50px;
+    height: 100px;
+    background-image: url(images/tie_fighter.png);
+    position: relative;
+    top: -200px;
+    left: 900px;
+    animation: tie 5s infinite;
+}
+/*X-Wing ID*/
+#X-Wing{
+    width: 100px;
+    height: 100px;
+    background-image: url(images/x-wing.png);
+    position: relative;
+    top: -300px;
+    left: 900px;
+    animation: X-Wing 7s infinite;
+}
+/*Classes*/
+.timer_div {
+    position: relative;
+    top: 20px;
+    left: 50px;
+}
+/*Positioning for the Game
+.game_positioning{
+    position: relative;
+    top: 300px;
+    left: 300px;
+}
+*/
+/*Animate Class for Jumping Mechanics*/
+.animate{
+    animation: jump 500ms;
+}
+
+/*Animations*/
+/*Jump Animation for Yoda*/
+
+@keyframes jump {
+    0%{top: 280px;}
+    30%{top: 200px;}
+    70%{top: 200px;}
+    100%{top: 28s;}
+}
+/*Move Left Animation for Storm Trooper*/
+@keyframes storm_trooper {
+    0%{left: 900px;}
+    100%{left: -40px;}
+}
+
+/*Move Right Animation for Tie Fighter and X-Wing*/
+/*Tie Fighter Animation*/
+@keyframes tie {
+    0%{left: -80px;}
+    100%{left: 900px;}
+}
+/*X-Wing Animation*/
+@keyframes X-Wing {
+    0%{left: -80px;}
+    100%{left: 880px;}
+}
